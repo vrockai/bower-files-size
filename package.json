@@ -1,0 +1,19 @@
+{
+  "name": "bower-files-size",
+  "version": "1.0.0",
+  "description": "List bower dependencies together with their sizes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower-files": "^4.0.0",
+    "console.table": "^0.9.1",
+    "lodash": "^4.17.4",
+    "pretty-bytes": "^4.0.2"
+  },
+  "preferGlobal": true,
+  "bin": "./bin/bower-files-size.js"
+}
