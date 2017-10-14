@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/vrockai/.nvm/versions/node/v6.3.1/bin/node',
+1 verbose cli   '/home/vrockai/.nvm/versions/node/v6.3.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/vrockai/workspace/bower-files-size',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/vrockai/.npm/bower-files-size/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/vrockai/.npm correctMkdir not in flight; initializing
+10 info lifecycle bower-files-size@1.0.0~prepublish: bower-files-size@1.0.0
+11 silly lifecycle bower-files-size@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/vrockai/.npm/bower-files-size/1.0.0/package.tgz',
+12 verbose tar pack   '/home/vrockai/workspace/bower-files-size' ]
+13 verbose tarball /home/vrockai/.npm/bower-files-size/1.0.0/package.tgz
+14 verbose folder /home/vrockai/workspace/bower-files-size
+15 verbose addLocalTarball adding from inside cache /home/vrockai/.npm/bower-files-size/1.0.0/package.tgz
+16 verbose correctMkdir /home/vrockai/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd bower-files-size@1.0.0
+18 verbose afterAdd /home/vrockai/.npm/bower-files-size/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/vrockai/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/vrockai/.npm/bower-files-size/1.0.0/package/package.json written
+21 silly publish { name: 'bower-files-size',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'List bower dependencies together with their sizes.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies:
+21 silly publish    { 'bower-files': '^4.0.0',
+21 silly publish      'console.table': '^0.9.1',
+21 silly publish      lodash: '^4.17.4',
+21 silly publish      'pretty-bytes': '^4.0.2' },
+21 silly publish   preferGlobal: true,
+21 silly publish   bin: { 'bower-files-size': './bin/bower-files-size.js' },
+21 silly publish   readme: '# Install\n\n`npm install -g bower-files-size`\n\n# Usage\n\nIn the directory of a project with `bower.json` and bower dependencies already installed, do:\n`$ bower-files-size`',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '7c774870f2121f969f473cc9cef2d123fca87fed',
+21 silly publish   _id: 'bower-files-size@1.0.0',
+21 silly publish   _shasum: '56cc250283a8d0736e69867fd27f3cb7d1c0de37',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name bower-files-size
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'bower-files-size',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'bower-files-size',
+26 silly mapToRegistry   name: 'bower-files-size',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/bower-files-size
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /home/vrockai/.npm/bower-files-size/1.0.0/package.tgz
+30 verbose request uri http://registry.npmjs.org/bower-files-size
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 5:29:45 PM
+33 verbose request using bearer token for auth
+34 verbose request id 8a513caf160b293b
+35 http request PUT http://registry.npmjs.org/bower-files-size
+36 http 403 http://registry.npmjs.org/bower-files-size
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '124',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 14 Oct 2017 15:29:47 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-hhn1535-HHN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1507994985.496895,VS0,VE1682',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /home/vrockai/.npm/registry.npmjs.org/bower-files-size on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0 : bower-files-size
+40 verbose stack     at makeError (/home/vrockai/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/home/vrockai/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/home/vrockai/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/home/vrockai/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/home/vrockai/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/home/vrockai/.nvm/versions/node/v6.3.1/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid bower-files-size
+43 verbose cwd /home/vrockai/workspace/bower-files-size
+44 error Linux 4.10.0-35-generic
+45 error argv "/home/vrockai/.nvm/versions/node/v6.3.1/bin/node" "/home/vrockai/.nvm/versions/node/v6.3.1/bin/npm" "publish"
+46 error node v6.3.1
+47 error npm  v3.10.3
+48 error code E403
+49 error You cannot publish over the previously published version 1.0.0. Try bumping the version to 2.0.0 : bower-files-size
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
