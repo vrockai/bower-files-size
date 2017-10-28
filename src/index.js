@@ -77,5 +77,4 @@ function bowerFilesSize() {
     }
 }
 
-bowerFilesSize();
 module.exports = bowerFilesSize;
