@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "vrockai",
+  "keywords": [
+    "bower"
+  ],
   "license": "ISC",
   "dependencies": {
     "bower-files": "^4.0.0",
@@ -15,5 +18,9 @@
     "pretty-bytes": "^4.0.2"
   },
   "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrockai/bower-files-size.git"
+  },
   "bin": "./bin/bower-files-size.js"
 }
