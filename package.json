@@ -1,6 +1,6 @@
 {
   "name": "bower-files-size",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "List bower dependencies together with their sizes.",
   "main": "index.js",
   "scripts": {
